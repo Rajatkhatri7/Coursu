@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Coursu</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="/Coursu/static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="/Coursu/static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="/Coursu/static/css/style.css" rel="stylesheet">
+
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-analytics.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+  <!-- Start your project here-->
+
+
+
+  <!--Card-->
+  <div class="card" id="hello" style=" width: 530px;  margin-left: auto; margin-top: 20px;
+    margin-right: auto;  "
+    >
+
+    <!--Card image-->
+    <div class="view overlay">
+      <img src="https://www.talentlms.com/wp-content/uploads/2018/10/talentlms-content-library.png" class="img-fluid" alt="MDB Quick Start">
+      <a href="#">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <!-- Material form login -->
+
+  <!-- Material form login -->
+
+  <!-- Default form register -->
+<form class="text-center border border-light p-5" action="#!">
+
+    <p class="h4 mb-4">Start or Resume Learning</p>
+
+
+
+    <!-- E-mail -->
+    <input type="email" name="email" required id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Password -->
+    <input type="password" name="password" required id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+    <!-- Phone number -->
+
+
+    <!-- Newsletter -->
+
+
+    <!-- Sign in button -->
+    <button class="btn btn-info my-4 btn-block" href="main_screen.html" id ="btn-login" type="submit">Sign in</button>
+
+<a class="btn btn-info my-4 btn-block" href="main_screen.html"  type="ansub">Anonymous Sign in</a>
+
+</form>
+<!-- Default form register -->
+
+
+  </div>
+  <!--/.Card-->
+
+
+
+
+  <!-- /Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="/Coursu/static/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/Coursu/static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/Coursu/static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="static/js/mdb.min.js"></script>
+
+  <script src="/Coursu/static/js/index.js">
+
+  firebase.auth.onAuthStateChanged(function(user){
+    if(user){
+      window.location.href="templates/main_screen.html"
+    }
+  });</script>
+</body>
+
+</html>
